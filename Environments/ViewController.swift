@@ -9,17 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+	@IBOutlet var environmentLabel: UILabel!
+	@IBOutlet var baseURLLabel: UILabel!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		environmentLabel.text = kServiceEnvironment
+		baseURLLabel.text = kBaseURL
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-
-
 }
-
